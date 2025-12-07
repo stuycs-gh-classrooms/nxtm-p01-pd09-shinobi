@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/QTULg0OX)
 # NeXtCS Project 01
 ### thinker0: Aman Ibrahim
-### thinker1: 
+
 ---
 
 ### Overview
@@ -27,32 +27,36 @@ The first phase will be to work on this document.
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-The program should have a 2d array that 
+The program should have a 2D array that stores and manages grid of bricks. It should have a controllable paddle, bouncing ball, wall collision, brick collision, a way to restart game upon losing the ball, and pause/start button.
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+Extra features I would like to add if there is time include different colored bricks, bricks that take more than one hit to break, score tracking, multiple levels, and small visual effects when bricks break. Also maybe even a background music on different levels.
+
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+A 1D array will be used to store player lives, score milestones, or possible level patterns.
 
 2D Array:
-- YOUR ANSWER HERE
+A 2D array will be used to represent the grid of bricks, where each element in the array represents a single brick object on the screen.
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+Left Arrow is to move paddle left
+Right Arrow is to move paddle right
+Spacebar is to launch ball and pause/unpause the game
+R is to reset the game
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: Moving the mouse will allow the paddle to follow the horizontal position of the cursor.
+- Mouse pressed: Clicking the mouse will launch the ball when the game is not running.
 
 
 ### Classes
@@ -60,12 +64,27 @@ What classes will you be creating for this project? Include the instance variabl
 
 CLASS NAME0
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+float x, y
+float width, height
+float speed
+boolean movingLeft
+boolean movingRight
 - METHODS
-  - LIST METHODS HERE
+update()
+display()
+moveLeft()
+moveRight()
+resetPosition()
 
-CLASS NAME1
+CLASS NAME1: Ball
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+float x, y
+float radius
+float xSpeed, ySpeed
+
 - METHODS
-  - LIST METHODS HERE
+update()
+display()
+checkWallCollision()
+checkPaddleCollision()
+resetPosition()
