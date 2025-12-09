@@ -63,28 +63,29 @@ Mouse Control:
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
 CLASS NAME: Paddle
-- Instance variables:
-float x, y
-float width, height
-float speed
-boolean movingLeft
-boolean movingRight
-- METHODS
-update()
-display()
-moveLeft()
-moveRight()
-resetPosition()
+ Instance variables:
+- float x, y
+- float width, height
+- float speed
+- boolean movingLeft
+- boolean movingRight
+ METHODS
+- update()
+- display()
+- moveLeft()
+- moveRight()
+- resetPosition()
 
 CLASS NAME1: Ball
-- Instance variables:
-float x, y
-float radius
-float xSpeed, ySpeed
+ Instance variables:
+- float x, y
+- float radius
+-float xSpeed
+ySpeed
 
-- METHODS
-update()
-display()
-checkWallCollision()
-checkPaddleCollision()
-resetPosition()
+ METHODS
+- update()
+- display()
+- checkWallCollision()
+- checkPaddleCollision()
+- resetPosition()
