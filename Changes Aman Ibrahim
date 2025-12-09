@@ -1,0 +1,1 @@
+I added less floats to not make it seem repetitive and I also renamed one of the classes since it seemed ambiguous. I will not change boolean vars because I want to use it as a loop for moving the paddle left or right so if I hold the left arrow and it holds true it will be put in a loop where the paddle will keep moving until I stop holding the key.
