@@ -1,8 +1,8 @@
 # NeXtCS Project 01
 ### Period:  
-### Name0: YOUR NAME HERE
-### Name1: TEAMMATE NAME HERE (delete if working solo)
-#### Selected Game: YOUR GAME HERE
+### Name0: Aman Ibrahim
+
+#### Selected Game: Breakout/Arkanoid
 ---
 
 ### How To Play
